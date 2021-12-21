@@ -1,0 +1,5 @@
+services:
+  mymodule.route_subscriber:
+    class: Drupal\json_data\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains json_data.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function json_data_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the json_data module.
+    case 'help.page.json_data':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('It provide json data through an endpoint') . '</p>';
+      return $output;
+
+    default:
+  }
+}

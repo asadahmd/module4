@@ -1,0 +1,8 @@
+
+json_data.extended_site_controller_hello:
+  path: '/data/{api_key}/{content_type}/{node_id}'
+  defaults:
+    _controller: '\Drupal\json_data\Controller\ExtendedSiteController::getValue'
+    _title: 'getValue'
+  requirements:
+    _permission: 'access content'
